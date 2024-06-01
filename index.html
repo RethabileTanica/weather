@@ -3,32 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/index.css" />
     <title>Weather</title>
   </head>
   <body>
-      <div class="weather-app">
-            <header>
-                  <form class="search-form">
-                        <input type="search" placeholder="Enter a city" class="search-form-input" required>
-                        <input type="submit" value="Search" class="search-form-button">
-                  </form>
-            </header>
-            <main>
-                  <div class="weather-app-data">
-                        <p class="weather-app-details"><h1 class="weather-city">Johannesburg</h1>
-                              Sunday 16:30, partly cloudy
-                              <br>
-                              Humidity: <strong>66%</strong>, Wind: <strong>3.13km</strong>
-                              <div class="weather-app-temperature-value">26</div> <div class="weather-app-icon">°C</div>
-                        </p>
-                        <div class="weather-app-icon">⛅</div>
-                  </div>
-            </main>
-      </div>
-    <footer>
-      Coded by <a href="https://github.com/dashboard">Tanica</a>, code hosted on
-      <a href="https://github.com/RethabileTanica/weather">GitHub</a> and
-      <a href="https://main--my-weather-forecastt.netlify.app/">Netlify</a>
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            class="search-form-input"
+            required
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-city">Johannesburg</h1>
+            <p class="weather-app-details">
+            <div class="weather-app-temperature">
+            <div class="weather-app-temperature-value">26</div>
+            <div class="weather-app-unit">°C</div>
+            </div>
+              
+             Sunday 16:30, partly cloudy
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km</strong>
+          </div>
+            </p>
+            <div class="weather-app-icon">⛅</div>
+          </div>
+          <footer>
+        Coded by <a href="https://github.com/dashboard">Tanica</a>, code open-sourced
+        on <a href="https://github.com/RethabileTanica/weather">GitHub</a> and hosted on
+        <a href="https://main--my-weather-forecastt.netlify.app/">Netlify</a>
+      </footer>
+        </div>
+        
+      </main>
+    </div>
   </body>
 </html>
